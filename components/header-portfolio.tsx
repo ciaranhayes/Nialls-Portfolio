@@ -1,4 +1,5 @@
 'use client'
+import { v4 as uuidv4 } from 'uuid';
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -7,6 +8,12 @@ import Link from 'next/link'
 interface props {
     href: string;
 }
+
+const links = [
+    { name: "MPower", link: "/portfolio-mpower" },
+    { name: "Spotify", link: "/portfolio-spotify" },
+    { name: "Braith", link: "/portfolio-braith" }
+]
 
 export default function HeaderPortfolio({ href }: props) {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -28,6 +35,11 @@ export default function HeaderPortfolio({ href }: props) {
                         href={href}
                         className="text-sm/6 font-semibold"
                     >Home</Link>
+                    {links.map(link => <Link
+                        key={uuidv4()}
+                        href={link.link}
+                        className="text-sm/6 font-semibold"
+                    >{link.name}</Link>)}
                 </div>
             </nav>
 
@@ -59,6 +71,11 @@ export default function HeaderPortfolio({ href }: props) {
                                     href={href}
                                     className="text-sm/6 font-semibold"
                                 >Home</Link>
+                                {links.map(link => <Link
+                                    key={uuidv4()}
+                                    href={link.link}
+                                    className="text-sm/6 font-semibold"
+                                >{link.name}</Link>)}
                             </div>
                         </div>
                     </div>
