@@ -11,11 +11,12 @@ interface CardPortfolioProps {
     text: string;
     title: string;
     tag1: string[];
+    id: string;
 }
 
-export default function CardPortfolio({ source, link, alt, text, title, tag1 }: CardPortfolioProps) {
+export default function CardPortfolio({ source, link, alt, text, title, tag1, id }: CardPortfolioProps) {
     return (
-        <Link href={link} className="block h-full">
+        <Link id={id} href={link} className="block h-full">
             <div className="h-full rounded overflow-hidden shadow-lg text-white">
                 <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2">{title}</div>

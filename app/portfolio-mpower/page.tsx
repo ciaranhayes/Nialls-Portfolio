@@ -1,10 +1,10 @@
-import Header from "@/components/header"
+import HeaderPortfolio from "@/components/header-portfolio"
 import PortfolioMpower from "@/components/mpower"
 
 export default function MPower() {
     return (
         <>
-            <Header />
+            <HeaderPortfolio href="/#mpower"/>
             <PortfolioMpower />
         </>
     )
