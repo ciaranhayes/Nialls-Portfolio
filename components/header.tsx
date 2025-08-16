@@ -13,7 +13,7 @@ const navigation = [
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     return (
-        <header className="absolute inset-x-0 top-0 z-50">
+        <header className="absolute inset-x-0 top-0 z-50 text-white">
             <nav aria-label="Global" className="flex items-center p-6 lg:px-8">
                 <div className="flex lg:hidden">
                     <button

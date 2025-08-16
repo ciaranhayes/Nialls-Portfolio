@@ -1,5 +1,11 @@
+import Header from "@/components/header"
+import PortfolioMpower from "@/components/mpower"
+
 export default function MPower() {
     return (
-        <h1>This is where mpower will go</h1>
-    );
+        <>
+            <Header />
+            <PortfolioMpower />
+        </>
+    )
 }
