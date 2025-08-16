@@ -4,10 +4,10 @@ import Image from 'next/image'
 
 export default function AboutMe() {
     return (
-        <div className="relative isolate overflow-hidden bg-[#000e2f] px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0 text-white">
+        <div id="aboutme" className="relative isolate overflow-hidden bg-[#000e2f] px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0 text-white">
             <div
                 aria-hidden="true"
-                className="absolute inset-x-0 -top-40 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+                className="absolute inset-x-0 -top-40 z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
             >
                 <div
                     style={{
@@ -56,7 +56,7 @@ export default function AboutMe() {
                                         Experienced in the end-to-end design process. From research, to user flows, the creation of low and high fidelity prototypes and user testing.</span>
                                 </li>
                             </ul>
-                            <div className="p-8">
+                            <div id="skills" className="p-8">
                                 <ul role="list" className="mt-8 space-y-8 text-i">
                                     <li className="flex gap-x-3">
                                         <SparklesIcon aria-hidden="true" className="mt-1 size-5 flex-none text-[#38d586]" />
