@@ -1,9 +1,9 @@
 import Carousel from "./carousel";
-import { SparklesIcon, CalendarDaysIcon, ComputerDesktopIcon, PencilIcon, DocumentMagnifyingGlassIcon } from '@heroicons/react/20/solid'
+import { SparklesIcon, CogIcon, ComputerDesktopIcon, PencilIcon, DocumentMagnifyingGlassIcon } from '@heroicons/react/20/solid'
 
 const images = ["/portfolio-stuff.png", "/portfolio-logo-0.png"]
 
-export default function PortMpower() {
+export default function PortBraith() {
     return (
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10 text-white">
             <div
@@ -22,7 +22,7 @@ export default function PortMpower() {
                 <div className="lg:pr-4">
                     <div className="lg:max-w-lg">
                         <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty sm:text-5xl">
-                            Project 1 - Smart MPower
+                            Project 3 - Final Design
                         </h1>
                         <p className="mt-6 text-xl/8">
                             Get Niall to give you text
@@ -39,39 +39,39 @@ export default function PortMpower() {
                         <ul role="list" className="mt-8 space-y-8">
                             <li className="flex gap-x-3">
                                 <SparklesIcon aria-hidden="true" className="mt-1 size-5 flex-none text-[#38d586]" />
-                                <span>Creation of an interactive learning module for company’s website.
+                                <span>Final bachelor’s industrial design project.
                                 </span>
                             </li>
                             <li className="flex gap-x-3">
                                 <SparklesIcon aria-hidden="true" className="mt-1 size-5 flex-none text-[#38d586]" />
-                                <span>End-to-end design process from research to high-fidelity prototype.
+                                <span>End-to-end design process.
                                 </span>
                             </li>
                             <li className="flex gap-x-3">
                                 <SparklesIcon aria-hidden="true" className="mt-1 size-5 flex-none text-[#38d586]" />
-                                <span>Proficient use of Figma.</span>
+                                <span>Research techniques, stakeholder communication, prototyping and user testing.</span>
                             </li>
                         </ul>
                         <div id="skills" className="p-8">
-                                <ul role="list" className="mt-8 space-y-8 text-i">
-                                    <li className="flex gap-x-3">
-                                        <DocumentMagnifyingGlassIcon aria-hidden="true" className="mt-1 size-5 flex-none text-[#38d586]" />
-                                        <span>Conduct research about the company, what they do, current projects and their ethos.</span>
-                                    </li>
-                                    <li className="flex gap-x-3">
-                                        <PencilIcon aria-hidden="true" className="mt-1 size-5 flex-none text-[#38d586]" />
-                                        <span>Creation of hand sketch wireframes and storyboards, mapping the flow of the interactive module.</span>
-                                    </li>
-                                    <li className="flex gap-x-3">
-                                        <ComputerDesktopIcon aria-hidden="true" className="mt-1 size-5 flex-none text-[#38d586]" />
-                                        <span>Moving to low fidelity wireframes and prototypes on Figma.</span>
-                                    </li>
-                                    <li className="flex gap-x-3">
-                                        <CalendarDaysIcon aria-hidden="true" className="mt-1 size-5 flex-none text-[#38d586]" />
-                                        <span>Deliverable: A more accessible webpage for visitors who are unaware of the concept, making the ethos of the company more well known.</span>
-                                    </li>
-                                </ul>
-                            </div>
+                            <ul role="list" className="mt-8 space-y-8 text-i">
+                                <li className="flex gap-x-3">
+                                    <DocumentMagnifyingGlassIcon aria-hidden="true" className="mt-1 size-5 flex-none text-[#38d586]" />
+                                    <span>Conduct research in key stakeholders, secondary stakeholders and into the product situation.</span>
+                                </li>
+                                <li className="flex gap-x-3">
+                                    <PencilIcon aria-hidden="true" className="mt-1 size-5 flex-none text-[#38d586]" />
+                                    <span>Create affinity diagrams, observation-problem-needs, and build a design guide for solution.</span>
+                                </li>
+                                <li className="flex gap-x-3">
+                                    <ComputerDesktopIcon aria-hidden="true" className="mt-1 size-5 flex-none text-[#38d586]" />
+                                    <span>Ideate through sketches, prototypes and develop these towards the final solution through user testing and stakeholder feedback.</span>
+                                </li>
+                                <li className="flex gap-x-3">
+                                    <CogIcon aria-hidden="true" className="mt-1 size-5 flex-none text-[#38d586]" />
+                                    <span>Design for manufacture and build final prototype.</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

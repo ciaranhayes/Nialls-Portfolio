@@ -5,7 +5,6 @@ export default function Hero() {
     return (
         <div className="bg-[#000e2f] text-white">
             <Header />
-
             <div className="relative isolate px-6 pt-14 lg:px-8">
                 <div
                     aria-hidden="true"
@@ -26,11 +25,6 @@ export default function Hero() {
                         </h1>
                         <h2 className="text-3xl font-semibold text-balance sm:text-7xl">UX DESIGNER</h2>
                         <p className="p-8">I craft intuitive user experiences, drive human-centered design, and deliver end-to-end solutions from research and prototyping to testing.</p>
-                        <div className="mt-10 flex items-center justify-center gap-x-6">
-                            <a href="#" className="text-sm/6 font-semibold">
-                                My Portfolio <span aria-hidden="true">→</span>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>
