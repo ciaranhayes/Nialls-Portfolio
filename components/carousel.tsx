@@ -16,9 +16,10 @@ export default function Carousel({ imageUrls }: ImageSliderProps) {
     }
 
     function decrease() {
+        if(imageIndex <= 0) {
+            setImageIndex(imageUrls.length - 1);
+        } else {
         setImageIndex(imageIndex - 1)
-        if(imageIndex <= (imageUrls.length + 1)) {
-            setImageIndex(imageUrls.length);
         }
     }
     
