@@ -1,5 +1,7 @@
 'use client'
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
 
 type ImageSliderProps = {
     imageUrls: string[];
@@ -50,11 +52,20 @@ export default function Carousel({ imageUrls }: ImageSliderProps) {
                         />
                     </svg>
                 </button>
-                <img
-                    src={imageUrls[imageIndex]}
-                    alt="photos from project"
-                    className="w-full max-w-full max-h-[300px] sm:max-h-[500px] rounded-xl shadow-lg object-contain"
-                />
+                <div className="w-full flex justify-center">
+                    <AnimatePresence mode="wait">
+                        <motion.img
+                            key={imageUrls[imageIndex]} // key triggers animation on change
+                            src={imageUrls[imageIndex]}
+                            alt="photos from project"
+                            className="w-full max-w-full max-h-[300px] sm:max-h-[500px] rounded-xl shadow-lg object-contain"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.3 }}
+                        />
+                    </AnimatePresence>
+                </div>
                 <button
                     className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 hover:bg-[#38d586B2] text-white p-2 sm:p-3 rounded-full shadow-md"
                     onClick={increase}
