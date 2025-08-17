@@ -7,6 +7,7 @@ const images = ["/portfolio-stuff.png", "/portfolio-logo-0.png"]
 export default function MPower() {
     return (
         <>
+            <HeaderPortfolio href="/#mpower"/>
             <Carousel imageUrls={images} />
         </>
     )
