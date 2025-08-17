@@ -1,14 +1,15 @@
 import HeaderPortfolio from "@/components/header-portfolio"
 import Features from "@/components/features-portfolio"
-import Carousel from "@/components/carousel"
-
-const images = ["/portfolio-stuff.png", "/portfolio-logo-0.png"]
+import PortIntro from "@/components/Port-intro"
 
 export default function MPower() {
     return (
         <>
-            <HeaderPortfolio href="/#mpower"/>
-            <Carousel imageUrls={images} />
+            <HeaderPortfolio href="/#mpower" />
+            <main className="pt-30">
+                <PortIntro />
+            </main>
+
         </>
     )
 }
