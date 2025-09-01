@@ -6,9 +6,7 @@ export default function Braith() {
     return (
         <>
             <HeaderPortfolio href="/#final" />
-            <main className="pt-30">
-                <PortBraith />
-            </main>
+            <PortBraith />
             <Footer />
         </>
     );

@@ -6,9 +6,7 @@ export default function MPower() {
     return (
         <>
             <HeaderPortfolio href="/#mpower" />
-            <main className="pt-30">
-                <PortMPower />
-            </main>
+            <PortMPower />
             <Footer />
         </>
     )

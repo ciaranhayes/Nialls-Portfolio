@@ -1,77 +1,121 @@
-import Carousel from "./carousel";
-import { SparklesIcon, PresentationChartLineIcon, ComputerDesktopIcon, PencilIcon, DocumentMagnifyingGlassIcon } from '@heroicons/react/20/solid'
+import { SparklesIcon, ComputerDesktopIcon, PencilIcon, DocumentMagnifyingGlassIcon } from '@heroicons/react/20/solid'
+import CarouselSpotify from './carouselSpotfiy'
+import Image from 'next/image'
+import { PresentationChartBarIcon } from '@heroicons/react/24/outline'
 
 const images = ["/portfolio-stuff.png", "/portfolio-logo-0.png"]
 
 export default function PortSpotify() {
     return (
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10 text-white">
-            <div
-                aria-hidden="true"
-                className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-            >
-                <div
-                    style={{
-                        clipPath:
-                            "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-                    }}
-                    className="relative left-1/2 aspect-[1155/678] w-[36rem] -translate-x-1/2 rotate-30 bg-gradient-to-tr from-[#38d586] to-[#ffffff] opacity-50 sm:w-[72rem]"
-                />
-            </div>
-            <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8 text-white">
-                <div className="lg:pr-4">
-                    <div className="lg:max-w-lg">
-                        <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty sm:text-5xl">
-                            Project 2 - Spotify Design Challenge
-                        </h1>
-                        <p className="mt-6 text-xl/8">
-                            Get Niall to give you text
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div className="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-                <Carousel imageUrls={images} />
-            </div>
-            <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-                <div className="lg:pr-4">
-                    <div className="max-w-xl text-base/7 lg:max-w-lg">
-                        <ul role="list" className="mt-8 space-y-8">
-                            <li className="flex gap-x-3">
-                                <SparklesIcon aria-hidden="true" className="mt-1 size-5 flex-none text-[#38d586]" />
-                                <span>Rapid design challenge.</span>
-                            </li>
-                            <li className="flex gap-x-3">
-                                <SparklesIcon aria-hidden="true" className="mt-1 size-5 flex-none text-[#38d586]" />
-                                <span>Use of mapping, storyboards, user flows and mid-fidelity mock-ups.
-                                </span>
-                            </li>
-                            <li className="flex gap-x-3">
-                                <SparklesIcon aria-hidden="true" className="mt-1 size-5 flex-none text-[#38d586]" />
-                                <span>Proficient use of Figma.</span>
-                            </li>
-                        </ul>
-                        <div id="skills" className="p-8">
-                            <ul role="list" className="mt-8 space-y-8 text-i">
-                                <li className="flex gap-x-3">
-                                    <DocumentMagnifyingGlassIcon aria-hidden="true" className="mt-1 size-5 flex-none text-[#38d586]" />
-                                    <span>Map current user flows for all stakeholders in the discovery of new music on Spotify.</span>
-                                </li>
-                                <li className="flex gap-x-3">
-                                    <PencilIcon aria-hidden="true" className="mt-1 size-5 flex-none text-[#38d586]" />
-                                    <span>Ideation of new ideas, using storyboards and group brainstorming to find solutions.</span>
-                                </li>
-                                <li className="flex gap-x-3">
-                                    <ComputerDesktopIcon aria-hidden="true" className="mt-1 size-5 flex-none text-[#38d586]" />
-                                    <span>Creation of mid-fidelity mock-ups on figma to present idea to the client (Spotify).</span>
-                                </li>
-                                <li className="flex gap-x-3">
-                                    <PresentationChartLineIcon aria-hidden="true" className="mt-1 size-5 flex-none text-[#38d586]" />
-                                    <span>Presentation of ideas.</span>
-                                </li>
-                            </ul>
+        <div className="overflow-hidden sm:py-32">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                    <div className="lg:pt-4 lg:pr-8">
+                        <div className="lg:max-w-lg">
+                            <h2 className="text-base font-semibold text-[#38d586]">
+                                Project 2
+                            </h2>
+                            <p className="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+                                Spotify
+                            </p>
+                            <p className="mt-6 text-lg text-gray-300">
+                                Get Niall to give you text
+                            </p>
+
+                            <dl className="mt-10 max-w-xl space-y-8 text-base text-gray-400 lg:max-w-none">
+                                <div className="relative pl-9">
+                                    <dt className="inline font-semibold text-white">
+                                        <SparklesIcon
+                                            aria-hidden="true"
+                                            className="absolute top-1 left-1 h-5 w-5 text-[#38d586]"
+                                        />
+                                        Rapid design
+                                    </dt>{" "}
+                                    <dd className="inline">
+                                        challenge involving rapid design
+                                    </dd>
+                                </div>
+                                <div className="relative pl-9">
+                                    <dt className="inline font-semibold text-white">
+                                        <SparklesIcon
+                                            aria-hidden="true"
+                                            className="absolute top-1 left-1 h-5 w-5 text-[#38d586]"
+                                        />
+                                        Mapping, storyboards, user flows, mid-fidelity mock-ups
+                                    </dt>{" "}
+                                </div>
+                                <div className="relative pl-9">
+                                    <dt className="inline font-semibold text-white">
+                                        <SparklesIcon
+                                            aria-hidden="true"
+                                            className="absolute top-1 left-1 h-5 w-5 text-[#38d586]"
+                                        />
+                                        Tools
+                                    </dt>{" "}
+                                    <dd className="inline">Proficient use of Figma.</dd>
+                                </div>
+                            </dl>
+
+                            <div className='ml-10'>
+                                <dl className="mt-10 max-w-xl space-y-8 text-base text-gray-400 lg:max-w-none">
+                                    <div className="relative pl-9">
+                                        <DocumentMagnifyingGlassIcon
+                                            aria-hidden="true"
+                                            className="absolute top-1 left-1 h-5 w-5 text-[#38d586]"
+                                        />
+                                        <dt className="inline font-semibold text-white">Mapping</dt>{" "}
+                                        <dd className="inline">
+                                            Map current user flows for all stakeholders in the discovery of new music on Spotify.
+                                        </dd>
+                                    </div>
+                                    <div className="relative pl-9">
+                                        <PencilIcon
+                                            aria-hidden="true"
+                                            className="absolute top-1 left-1 h-5 w-5 text-[#38d586]"
+                                        />
+                                        <dt className="inline font-semibold text-white">Ideation</dt>{" "}
+                                        <dd className="inline">
+                                            new ideas ideated, using storyboards and group brainstorming to find solutions.
+                                        </dd>
+                                    </div>
+                                    <div className="relative pl-9">
+                                        <ComputerDesktopIcon
+                                            aria-hidden="true"
+                                            className="absolute top-1 left-1 h-5 w-5 text-[#38d586]"
+                                        />
+                                        <dt className="inline font-semibold text-white">
+                                            Mid-fidelity mock-ups
+                                        </dt>{" "}
+                                        <dd className="inline">
+                                            Creation of mid-fidelity mock-ups on figma to present idea to the client (Spotify).
+                                        </dd>
+                                    </div>
+                                    <div className="relative pl-9">
+                                        <PresentationChartBarIcon
+                                            aria-hidden="true"
+                                            className="absolute top-1 left-1 h-5 w-5 text-[#38d586]"
+                                        />
+                                        <dt className="inline font-semibold text-white">
+                                            Presentation
+                                        </dt>{" "}
+                                        <dd className="inline">
+                                            Ideas successfully presented
+                                        </dd>
+                                    </div>
+                                    <div className="flex justify-center mt-20">
+                                        <Image
+                                            src="/photo2-3.png"
+                                            alt="photo for spotify design"
+                                            width={300}
+                                            height={500}
+                                            className="rounded-lg shadow-lg"
+                                        />
+                                    </div>
+                                </dl>
+                            </div>
                         </div>
                     </div>
+                    <CarouselSpotify />
                 </div>
             </div>
         </div>

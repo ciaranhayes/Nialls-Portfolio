@@ -6,9 +6,7 @@ export default function Spotify() {
     return (
         <>
             <HeaderPortfolio href="/#spotify" />
-            <main className="pt-30">
-                <PortSpotify />
-            </main>
+            <PortSpotify />
             <Footer />
         </>
     )
