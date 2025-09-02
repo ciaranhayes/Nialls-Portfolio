@@ -6,7 +6,9 @@ export default function Braith() {
     return (
         <>
             <HeaderPortfolio />
-            <PortBraith />
+            <div className="sm:mt-100">
+                <PortBraith />
+            </div>
             <Footer />
         </>
     );
