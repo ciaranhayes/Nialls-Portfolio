@@ -19,7 +19,7 @@ export default function PortSpotify() {
                                 Spotify
                             </p>
                             <p className="mt-6 text-lg text-gray-300">
-                                Get Niall to give you text
+                                The brief for this rapid design challenge presented to me was how might Spotify better serve music discovery behaviors using AI on new or existing surfaces based on both implicit and explicit signals? The idea of this design challenge was to learn and understand rapid design thinking and creatively designing new surfaces for Spotify. The goal was to research and find new signals that Spotify may not have previously used or one that could be used in a different way. The final concept was one where users could discover through music through their location and connect with new people who have similar taste in music.
                             </p>
 
                             <dl className="mt-10 max-w-xl space-y-8 text-base text-gray-400 lg:max-w-none">

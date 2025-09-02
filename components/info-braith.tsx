@@ -17,7 +17,7 @@ export default function PortBraith() {
                                 Final Design Project
                             </p>
                             <p className="mt-6 text-lg text-gray-300">
-                                Get Niall to give you text
+                                Braith is a developmental chair that is designed to help children with autism learn about their self stimulating actions in their early years and help them to manage these actions. The aim of Braith is to give children with autism a more comfortable experience in the classroom and improve their development in their early school years. Braith was a project I completed as my final project for my bachelors degree. The project was a full design process experience, from problem identification through to design completion. The project gave me experience in research, usability tests, time management and communicating with stakeholders. The final design was commended by a number of primary school teachers in Ireland.
                             </p>
 
                             <dl className="mt-10 max-w-xl space-y-8 text-base text-gray-400 lg:max-w-none">
