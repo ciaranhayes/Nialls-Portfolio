@@ -1,4 +1,5 @@
 import CarouselBraith from './braith'
+import Image from 'next/image'
 import { SparklesIcon, CogIcon, ComputerDesktopIcon, PencilIcon, DocumentMagnifyingGlassIcon, NewspaperIcon } from '@heroicons/react/20/solid'
 
 const images = ["/portfolio-stuff.png", "/portfolio-logo-0.png"]
