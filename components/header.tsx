@@ -2,10 +2,9 @@
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon } from '@heroicons/react/24/outline'
-import Image from 'next/image'
 
 const navigation = [
-    { name: 'Home', href: '#'},
+    { name: 'Home', href: '#' },
     { name: 'About Me', href: '#aboutme' },
     { name: 'Skills', href: '#skills' },
     { name: 'Portfolio', href: '#portfolio' },
@@ -47,6 +46,8 @@ export default function Header() {
                             onClick={() => setMobileMenuOpen(false)}
                             className="-m-2.5 rounded-md p-2.5 text-gray-200"
                         >
+                            <span className="sr-only">Close menu</span>
+                            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                         </button>
                     </div>
                     <div className="mt-6 flow-root">
