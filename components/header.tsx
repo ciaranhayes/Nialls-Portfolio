@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon} from '@heroicons/react/24/outline'
 
 const navigation = [
     { name: 'Home', href: '#' },
@@ -49,7 +49,7 @@ export default function Header() {
                             className="-m-2.5 rounded-md p-2.5 text-gray-200"
                         >
                             <span className="sr-only">Close menu</span>
-                            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                            <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                         </button>
                     </div>
                     <div className="mt-6 flow-root">
