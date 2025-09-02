@@ -5,7 +5,7 @@ import Footer from "@/components/footer"
 export default function Spotify() {
     return (
         <>
-            <HeaderPortfolio href="/#spotify" />
+            <HeaderPortfolio />
             <PortSpotify />
             <Footer />
         </>

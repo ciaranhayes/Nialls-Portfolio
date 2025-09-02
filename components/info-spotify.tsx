@@ -3,8 +3,6 @@ import CarouselSpotify from './carouselSpotfiy'
 import Image from 'next/image'
 import { PresentationChartBarIcon } from '@heroicons/react/24/outline'
 
-const images = ["/portfolio-stuff.png", "/portfolio-logo-0.png"]
-
 export default function PortSpotify() {
     return (
         <div className="overflow-hidden sm:py-32">

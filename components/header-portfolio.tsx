@@ -4,10 +4,6 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 
-interface props {
-    href: string;
-}
-
 const links = [
     { name: "Home", link: "/"},
     { name: "MPower", link: "/portfolio-mpower" },
@@ -15,7 +11,7 @@ const links = [
     { name: "Braith", link: "/portfolio-braith" }
 ]
 
-export default function HeaderPortfolio({ href }: props) {
+export default function HeaderPortfolio() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     return (
         <header className="absolute inset-x-0 top-0 z-100">

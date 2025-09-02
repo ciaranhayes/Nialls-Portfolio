@@ -5,7 +5,7 @@ import Footer from "@/components/footer";
 export default function Braith() {
     return (
         <>
-            <HeaderPortfolio href="/#final" />
+            <HeaderPortfolio />
             <PortBraith />
             <Footer />
         </>

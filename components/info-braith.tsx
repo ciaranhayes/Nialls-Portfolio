@@ -1,8 +1,5 @@
 import CarouselBraith from './braith'
-import Image from 'next/image'
-import { SparklesIcon, CogIcon, ComputerDesktopIcon, PencilIcon, DocumentMagnifyingGlassIcon, NewspaperIcon } from '@heroicons/react/20/solid'
-
-const images = ["/portfolio-stuff.png", "/portfolio-logo-0.png"]
+import { SparklesIcon, CogIcon, PencilIcon, DocumentMagnifyingGlassIcon, NewspaperIcon } from '@heroicons/react/20/solid'
 
 export default function PortBraith() {
     return (
@@ -28,7 +25,7 @@ export default function PortBraith() {
                                             aria-hidden="true"
                                             className="absolute top-1 left-1 h-5 w-5 text-[#38d586]"
                                         />
-                                        Final bachelor's project
+                                        Final bachelor&apos;s project
                                     </dt>{" "}
                                     <dd className="inline">
                                         industrial design project
